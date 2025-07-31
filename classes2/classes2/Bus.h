@@ -9,7 +9,7 @@ private:
 	const int FEE;  //버스 요금(상수)
 
 public:
-	//기본 매개변수 사용
+	//기본 매개변수 사용(초기값은 선언부에만 넣음)
 	Bus(int busNumber, int FEE = 1500);
 
 	void take();       //승객 태우기
