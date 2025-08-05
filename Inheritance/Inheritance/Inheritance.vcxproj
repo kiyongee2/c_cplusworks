@@ -123,13 +123,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Alcohol.h" />
+    <ClInclude Include="Animal.h" />
+    <ClInclude Include="Cat.h" />
+    <ClInclude Include="Dog.h" />
+    <ClInclude Include="Drink.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Student.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Alcohol.cpp" />
+    <ClCompile Include="animal.cpp" />
+    <ClCompile Include="AnimalMain.cpp" />
+    <ClCompile Include="Cat.cpp" />
+    <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="Drink.cpp" />
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Statement.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Student.cpp" />
-    <ClCompile Include="StudentMain.cpp" />
+    <ClCompile Include="StudentMain.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="virtualAnimal.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -5,7 +5,7 @@
 using namespace std;
 
 class Person {
-protected:
+protected: //자식 클래스에서 접근 가능
 	string name; //이름
 
 public:
