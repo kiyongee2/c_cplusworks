@@ -3,7 +3,8 @@
 using namespace std;
 
 /*
-   stack - 배열 구조로 되어 있고, 먼저 들어간 요소가 나중에 꺼내짐
+   stack - 배열 구조로 되어 있고,
+           LIFO(Last In First Out) - 나중에 들어간 요소를 먼저 꺼낸다.
 */
 
 int main()
@@ -15,6 +16,11 @@ int main()
 	stk.push(10);
 	stk.push(20);
 	stk.push(30);
+
+	cout << "스택의 크기: " << stk.size() << endl; //3
+
+	//특정 요소 검색(접근) - 불가
+	//cout << stk[1] << endl;
 
 	cout << stk.top() << endl; //스택의 맨 위 요소, 30
 	stk.pop();  //요소 제거
@@ -30,7 +36,7 @@ int main()
 		stk.pop();
 	}
 	else {
-		cout << "스택이 이미 비어 있어서 pop()할 수 없습니다.\n";
+		cout << "스택이 비어 있어서 삭제할 수 없습니다.\n";
 	}
 
 	return 0;
